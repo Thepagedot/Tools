@@ -5,7 +5,12 @@ namespace Thepagedot.Tools.Xamarin.Android
 {
     public static class ViewHelpers
     {
-        public static void SetListViewHeightBasedOnChildren(AbsListView listView)
+        /// <summary>
+        /// Sets a ListView's height based on its children.
+        /// Can be used for nesting a ListView into a ScrollView.
+        /// </summary>
+        /// <param name="listView"></param>
+        public static void SetHeightBasedOnChildren(this AbsListView listView)
         {
             var listAdapter = listView.Adapter;
             if (listAdapter == null)
