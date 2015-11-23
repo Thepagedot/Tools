@@ -5,6 +5,9 @@ This project contains tools that make a developer's live easier.
 Coming soon: NuGet
 
 ## Content
+### Thepagedot.Tools
+- `Randomizer`
+
 ### Thepagedot.Tools.Windows.Universal
 #### Converters
 - `BooleanToVisibilityConverter`
