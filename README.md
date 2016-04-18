@@ -14,10 +14,17 @@ Coming soon: NuGet
 - `DateTimeToStringConverter`
 - `IntToVisibilityConverter`
 
+#### Services
+- `LocationService`
+
 ### Thepagedot.Tools.Xamarin.Android
 #### ViewHelpers
 - `SetListViewHeightBasedOnChildren(AbsListView)`
+
 #### ActivityHelpers
 - `SetSystemBarBackground(Activity, int)`
+
+#### Services
+- `LocationService`
 
 
