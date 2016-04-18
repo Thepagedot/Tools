@@ -9,6 +9,19 @@ namespace Thepagedot.Tools.Xamarin.Android
 	{
 		private readonly JsonSerializerSettings _JsonSerializerSettings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects };
 
+		public async Task SaveToFileAsync(string fileName, object content)
+		{
+			var json = JsonConvert.SerializeObject(content, Formatting.Indented, _JsonSerializerSettings);
+			var filePath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), fileName);
+			using (var file = File.Open(filePath, FileMode.Create, FileAccess.Write))
+			{
+				using (var stream = new StreamWriter(file))
+				{
+					await stream.WriteAsync(json);
+				}
+			}
+		}
+
 		public async Task<T> LoadFromFileAsync<T>(string fileName)
 		{
 			string json;
@@ -35,19 +48,6 @@ namespace Thepagedot.Tools.Xamarin.Android
 			}
 
 			return default(T);
-		}
-
-		public async Task SaveToFileAsync(string fileName, object content)
-		{
-			var json = JsonConvert.SerializeObject(content, Formatting.Indented, _JsonSerializerSettings);
-			var filePath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), fileName);
-			using (var file = File.Open(filePath, FileMode.Create, FileAccess.Write))
-			{
-				using (var stream = new StreamWriter(file))
-				{
-					await stream.WriteAsync(json);
-				}
-			}
 		}
 	}
 }
