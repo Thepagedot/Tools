@@ -5,6 +5,11 @@ This project contains tools that make a developer's live easier.
 Coming soon: NuGet
 
 ## Content
+### Cross-Platform
+|       Service       |     iOS    | Android | UWP |
+|:-------------------:|:----------:|:-------:|:---:|
+| LocalStorageService | not tested |   YES   | YES |
+
 ### Thepagedot.Tools
 - `Randomizer`
 
@@ -26,5 +31,10 @@ Coming soon: NuGet
 
 #### Services
 - `LocationService`
+
+### Thepagedot.Tools.Xamarin.iOS
+#### Services
+- `LocationService`
+
 
 
