@@ -17,5 +17,7 @@ Coming soon: NuGet
 ### Thepagedot.Tools.Xamarin.Android
 #### ViewHelpers
 - `SetListViewHeightBasedOnChildren(AbsListView)`
+#### ActivityHelpers
+- `SetSystemBarBackground(Activity, int)`
 
 
