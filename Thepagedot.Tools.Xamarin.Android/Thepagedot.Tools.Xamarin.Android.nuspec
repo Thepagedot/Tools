@@ -2,28 +2,27 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <version>0.1.0-alpha</version>
+    <title>$id$</title>
+    <authors>Thepagedot</authors>
+    <owners>Thepagedot</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/Thepagedot/Tools</projectUrl>
-    <iconUrl>https://avatars0.githubusercontent.com/u/13068921?v=3&s=200</iconUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/13068921</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>A set of useful tools to make a developer's life easier.</description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Thepagedot Tools Android</tags>
+    
+    <dependencies>
+        <dependency id="Thepagedot.Tools" version="0.1.0-alpha" />
+        <dependency id="Newtonsoft.Json" version="8.0.3" />
+    </dependencies>
   </metadata>
   
   <files>
-    <file src="bin\Release\$id$.dll" target="lib" /> 
+    <file src="bin\Release\$id$.dll" target="lib\net45" /> 
+    <file src="bin\Release\$id$.dll" target="lib\netcore45" />       
   </files>
-  
-  <dependencies>
-    <group>
-      <dependency id="Thepagedot.Tools" version="1.1.0" />
-      <dependency id="Newtonsoft.Json" version="0.1.0-alpha" />
-    </group>
-  </dependencies>
 </package>
