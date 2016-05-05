@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace Thepagedot.Tools
+namespace Thepagedot.Tools.Helper
 {
     public static class Randomizer
     {

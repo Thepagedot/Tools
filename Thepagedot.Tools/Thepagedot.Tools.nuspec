@@ -15,8 +15,6 @@
     <copyright>Copyright 2016</copyright>
     <tags>Thepagedot Tools</tags>
     <dependencies>
-      <group>
-      </group>
       <group targetFramework="dotnet">
         <dependency id="System.Resources.ResourceManager" version="4.0.0" />
         <dependency id="System.Runtime" version="4.0.0" />
@@ -25,4 +23,8 @@
       </group>
     </dependencies>
   </metadata>
+  
+  <files>
+    <file src="bin\Release\$id$.dll" target="lib\dotnet" />        
+  </files>
 </package>
