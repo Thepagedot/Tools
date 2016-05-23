@@ -33,7 +33,7 @@ namespace Thepagedot.Tools.Xamarin.Android
 		/// </summary>
 		/// <returns>The parsed object</returns>
 		/// <param name="fileName">File name.</param>
-		/// <typeparam name="T">The object's Type.</typeparam>
+		/// <typeparam name="T">The object's type.</typeparam>
 		public async Task<T> LoadFromFileAsync<T>(string fileName)
 		{
 			string json;
