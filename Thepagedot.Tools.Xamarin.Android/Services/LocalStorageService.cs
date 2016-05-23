@@ -9,6 +9,12 @@ namespace Thepagedot.Tools.Xamarin.Android
 	{
 		private readonly JsonSerializerSettings _JsonSerializerSettings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects };
 
+		/// <summary>
+		/// Parses an object to JSON and saves it to a local file
+		/// </summary>
+		/// <returns></returns>
+		/// <param name="fileName">File name.</param>
+		/// <param name="content">Object to parse and save.</param>
 		public async Task SaveToFileAsync(string fileName, object content)
 		{
 			var json = JsonConvert.SerializeObject(content, Formatting.Indented, _JsonSerializerSettings);
@@ -22,6 +28,12 @@ namespace Thepagedot.Tools.Xamarin.Android
 			}
 		}
 
+		/// <summary>
+		/// Loads JSON content from a file and parses it to an object.
+		/// </summary>
+		/// <returns>The parsed object</returns>
+		/// <param name="fileName">File name.</param>
+		/// <typeparam name="T">The object's Type.</typeparam>
 		public async Task<T> LoadFromFileAsync<T>(string fileName)
 		{
 			string json;

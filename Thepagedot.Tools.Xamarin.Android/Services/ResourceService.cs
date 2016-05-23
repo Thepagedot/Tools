@@ -12,12 +12,17 @@ using Android.Widget;
 
 namespace Thepagedot.Tools.Xamarin.Android
 {
-    public class ResourceService : IResourceService
-    {
-        public string GetString(string key)
-        {
-            var resId = Application.Context.Resources.GetIdentifier(key, "string", Application.Context.PackageName);
-            return Application.Context.GetString(resId);
-        }
-    }
+	public class ResourceService : IResourceService
+	{
+		/// <summary>
+		/// Gets the string of the given Android resource key
+		/// </summary>
+		/// <returns>The string.</returns>
+		/// <param name="key">Key.</param>
+		public string GetString(string key)
+		{
+			var resId = Application.Context.Resources.GetIdentifier(key, "string", Application.Context.PackageName);
+			return Application.Context.GetString(resId);
+		}
+	}
 }
