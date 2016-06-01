@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Services\ResourceService.cs" />
     <Compile Include="ViewHelpers.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
