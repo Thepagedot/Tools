@@ -19,7 +19,7 @@ namespace Thepagedot.Tools.Windows.Universal.Converters
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             return new NotImplementedException();
-        }      
+        }
     }
 
     public class DateTimeToDateStringConverter : IValueConverter
@@ -39,5 +39,5 @@ namespace Thepagedot.Tools.Windows.Universal.Converters
         {
             return new NotImplementedException();
         }
-    }    
+    }
 }
